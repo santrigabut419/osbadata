@@ -8,7 +8,7 @@ interface AnggotaCardProps {
 
 export function AnggotaCard({ anggota, warna, onBack }: AnggotaCardProps) {
   return (
-    <div className="overflow-hidden rounded-t-3xl md:rounded-3xl" style={{ backgroundColor: `${warna}15` }}>
+    <div className="overflow-hidden rounded-t-3xl md:rounded-3xl bg-white">
       <div className="relative">
         <div
           className="h-28 w-full"
@@ -30,7 +30,7 @@ export function AnggotaCard({ anggota, warna, onBack }: AnggotaCardProps) {
         </div>
       </div>
 
-      <div className="pt-14 pb-6 px-6 flex flex-col items-center">
+      <div className="pt-14 pb-6 px-6 flex flex-col items-center bg-white">
         <h2
           className="text-2xl font-extrabold text-center"
           style={{ color: warna }}
@@ -42,7 +42,7 @@ export function AnggotaCard({ anggota, warna, onBack }: AnggotaCardProps) {
         <div
           className="mt-3 inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-medium"
           style={{
-            backgroundColor: `${warna}20`,
+            backgroundColor: `${warna}18`,
             color: warna,
           }}
         >
@@ -56,8 +56,8 @@ export function AnggotaCard({ anggota, warna, onBack }: AnggotaCardProps) {
         </div>
 
         <div className="mt-5 w-full flex flex-col gap-3">
-          <div className="flex items-center gap-3 bg-white rounded-2xl px-4 py-3.5 shadow-sm">
-            <div className="w-9 h-9 rounded-xl flex items-center justify-center bg-gray-50 shrink-0">
+          <div className="flex items-center gap-3 bg-gray-50 rounded-2xl px-4 py-3.5">
+            <div className="w-9 h-9 rounded-xl flex items-center justify-center bg-white shrink-0 shadow-sm">
               <svg viewBox="0 0 24 24" fill="none" stroke={warna} strokeWidth="2" width={18} height={18}>
                 <line x1="4" y1="9" x2="20" y2="9"/>
                 <line x1="4" y1="15" x2="20" y2="15"/>
@@ -71,8 +71,8 @@ export function AnggotaCard({ anggota, warna, onBack }: AnggotaCardProps) {
             </div>
           </div>
 
-          <div className="flex items-center gap-3 bg-white rounded-2xl px-4 py-3.5 shadow-sm">
-            <div className="w-9 h-9 rounded-xl flex items-center justify-center bg-gray-50 shrink-0">
+          <div className="flex items-center gap-3 bg-gray-50 rounded-2xl px-4 py-3.5">
+            <div className="w-9 h-9 rounded-xl flex items-center justify-center bg-white shrink-0 shadow-sm">
               <svg viewBox="0 0 24 24" fill="none" stroke={warna} strokeWidth="2" width={18} height={18}>
                 <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
                 <line x1="16" y1="2" x2="16" y2="6"/>
