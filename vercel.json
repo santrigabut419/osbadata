@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "functions": {
+    "dist/index.mjs": {
+      "runtime": "vercel-nodejs@latest"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "dist/index.mjs"
+    }
+  ]
+}

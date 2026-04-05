@@ -1,0 +1,4 @@
+node_modules
+.git
+artifacts/osba-profile/node_modules
+artifacts/api-server/node_modules
