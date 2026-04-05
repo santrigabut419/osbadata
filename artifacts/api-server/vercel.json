@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "functions": {
-    "dist/index.mjs": {
-      "runtime": "vercel-node@latest"
+  "builds": [
+    {
+      "src": "dist/index.mjs",
+      "use": "@vercel/node"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/(.*)",
