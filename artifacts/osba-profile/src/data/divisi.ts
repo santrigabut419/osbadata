@@ -22,7 +22,7 @@ export const divisiList: DivisiInfo[] = [
   {
     nama: "Bahasa",
     slug: "bahasa",
-    warna: "#3a86ff",
+    warna: "#92400e",
     icon: "bahasa",
   },
   {
@@ -49,4 +49,10 @@ export const divisiList: DivisiInfo[] = [
     warna: "#ef476f",
     icon: "humas",
   },
+  {
+  nama: "Kesehatan",
+  slug: "kesehatan",
+  warna: "#dc2626",
+  icon: "kesehatan",
+},
 ];
