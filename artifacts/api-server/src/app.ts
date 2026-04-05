@@ -1,17 +1,16 @@
 import express, { type Express, type Request, type Response } from "express";
 import cors from "cors";
-import pinoHttp from "pino-http";
+import pinoHttp from 'pino-http'; // Gunakan default import tanpa { }
 import router from "./routes";
-import { logger as customLogger } from "./lib/logger"; // 2. Rename import agar tidak bentrok
+import { logger as customLogger } from "./lib/logger"; // Rename agar tidak bentrok
 
 const app: Express = express();
 
-// 3. Gabungkan inisialisasi pinoHttp langsung di app.use
 app.use(
   pinoHttp({
     logger: customLogger,
     serializers: {
-      req(req: any) { // 4. Tambahkan tipe data (atau 'any' jika cepat)
+      req(req: any) { 
         return {
           id: req.id,
           method: req.method,
